@@ -116,13 +116,7 @@ return {
         ["<C-l>"] = { "<right>", desc = "right" },
         ["<C-s>"] = { "<Esc>:update<cr>gi", desc = "Save File" },
       },
-      t = {
-        -- setting a mapping to false will disable it
-        -- ["<C-S>"] = false,
-      },
-      x = {
-        ["<leader>/"] = { "<cmd> Telescope live_grep <cr>", desc = "Find words" },
-      },
+      t = {},
     },
   },
 }
