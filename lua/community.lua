@@ -41,6 +41,7 @@ return {
   { import = "astrocommunity.lsp.nvim-lint" },
   { import = "astrocommunity.lsp.ts-error-translator-nvim" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+  { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
 
   {
     "m4xshen/smartcolumn.nvim",
@@ -68,6 +69,7 @@ return {
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.mini-bracketed" },
   { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.motion.tabout-nvim" },
 
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
@@ -81,6 +83,37 @@ return {
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
+
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+
+  {
+    "jackMort/ChatGPT.nvim",
+    config = function()
+      local config = {
+        api_host_cmd = os.getenv "OPENAI_API_HOST",
+        api_key_cmd = os.getenv "OPENAI_API_KEY",
+        openai_params = {
+          model = "claude-3-5-sonnet-20240620",
+          frequency_penalty = 0,
+          presence_penalty = 0,
+          max_tokens = 1000,
+          temperature = 0,
+          top_p = 1,
+          n = 1,
+        },
+        openai_edit_params = {
+          model = "claude-3-5-sonnet-20240620",
+          frequency_penalty = 0,
+          presence_penalty = 0,
+          temperature = 0,
+          top_p = 1,
+          n = 1,
+        },
+      }
+      local chatgpt = require "chatgpt"
+      chatgpt.setup(config)
+    end,
+  },
 
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.rust" },
@@ -100,4 +133,6 @@ return {
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
+
+  { import = "astrocommunity.game.leetcode-nvim" },
 }
