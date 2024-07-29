@@ -65,64 +65,6 @@ return {
     },
   },
   {
-    "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    cmd = { "ChatGPT", "ChatGPTRun", "ChatGPTActAs", "ChatGPTCompleteCode", "ChatGPTEditWithInstructions" },
-    keys = {
-      { "<leader>a", desc = "ChatGPT" },
-      { "<leader>aa", "<cmd>ChatGPT<cr>", desc = "Chat" },
-      { "<leader>ac", "<cmd>ChatGPTRun complete_code<cr>", desc = "Complete Code", mode = { "n", "v" } },
-      { "<leader>ae", "<cmd>ChatGPTEditWithInstructions<cr>", desc = "Edit with Instructions", mode = { "n", "v" } },
-      { "<leader>ag", "<cmd>ChatGPTRun grammar_correction<CR>", desc = "Grammar Correction", mode = { "n", "v" } },
-      { "<leader>ak", "<cmd>ChatGPTRun keywords<CR>", desc = "Keywords", mode = { "n", "v" } },
-      { "<leader>ad", "<cmd>ChatGPTRun docstring<CR>", desc = "Docstring", mode = { "n", "v" } },
-      { "<leader>at", "<cmd>ChatGPTRun translate<CR>", desc = "Translate", mode = { "n", "v" } },
-      { "<leader>ats", "<cmd>ChatGPTRun add_tests<CR>", desc = "Add Tests", mode = { "n", "v" } },
-      { "<leader>ao", "<cmd>ChatGPTRun optimize_code<CR>", desc = "Optimize Code", mode = { "n", "v" } },
-      { "<leader>as", "<cmd>ChatGPTRun summarize<CR>", desc = "Summarize", mode = { "n", "v" } },
-      { "<leader>af", "<cmd>ChatGPTRun fix_bugs<CR>", desc = "Fix Bugs", mode = { "n", "v" } },
-      { "<leader>ax", "<cmd>ChatGPTRun explain_code<CR>", desc = "Explain Code", mode = { "n", "v" } },
-      { "<leader>ar", "<cmd>ChatGPTRun roxygen_edit<CR>", desc = "Roxygen Edit", mode = { "n", "v" } },
-      {
-        "<leader>al",
-        "<cmd>ChatGPTRun code_readability_analysis<CR>",
-        desc = "Code Readability Analysis",
-        mode = { "n", "v" },
-      },
-    },
-    config = function()
-      local config = {
-        api_host_cmd = os.getenv "OPENAI_API_HOST",
-        api_key_cmd = os.getenv "OPENAI_API_KEY",
-        openai_params = {
-          model = "claude-3-5-sonnet-20240620",
-          frequency_penalty = 0,
-          presence_penalty = 0,
-          max_tokens = 1000,
-          temperature = 0,
-          top_p = 1,
-          n = 1,
-        },
-        openai_edit_params = {
-          model = "claude-3-5-sonnet-20240620",
-          frequency_penalty = 0,
-          presence_penalty = 0,
-          temperature = 0,
-          top_p = 1,
-          n = 1,
-        },
-      }
-      local chatgpt = require "chatgpt"
-      chatgpt.setup(config)
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "folke/trouble.nvim",
-      "nvim-telescope/telescope.nvim",
-    },
-  },
-  {
     "petertriho/nvim-scrollbar",
     opts = {
       handlers = {
@@ -176,6 +118,7 @@ return {
   },
   {
     "folke/drop.nvim",
+    enabled = false,
     opts = {
       ---@type DropTheme|string
       theme = "auto", -- when auto, it will choose a theme based on the date
