@@ -174,12 +174,17 @@ return {
       },
     },
   },
+  -- {
+  --   "folke/drop.nvim",
+  --   opts = {
+  --     ---@type DropTheme|string
+  --     theme = "auto", -- when auto, it will choose a theme based on the date
+  --   },
+  -- },
   {
-    "folke/drop.nvim",
-    opts = {
-      ---@type DropTheme|string
-      theme = "auto", -- when auto, it will choose a theme based on the date
-    },
+    "NStefan002/donut.nvim",
+    version = "*",
+    lazy = false,
   },
   {
     "olrtg/nvim-emmet",
