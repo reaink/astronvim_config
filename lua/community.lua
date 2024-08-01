@@ -69,6 +69,7 @@ return {
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.mini-bracketed" },
   { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.motion.tabout-nvim" },
 
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
