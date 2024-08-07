@@ -13,7 +13,7 @@
   "astroui": { "branch": "main", "commit": "0bc327c4a69f2e2b1a45449d5064d8e27e650d66" },
   "better-diagnostic-virtual-text": { "branch": "main", "commit": "eb3a77e714aa6c295bdb4f074fccbda637090f6e" },
   "better-escape.nvim": { "branch": "master", "commit": "f45b52f8f87792e8659526f23261ffe278a54be5" },
-  "catppuccin": { "branch": "main", "commit": "03a2f354456373c199eb7829fd14120cc2099108" },
+  "catppuccin": { "branch": "main", "commit": "05206bbb6d500a339cd55a9486532c3871a4455e" },
   "ccc.nvim": { "branch": "main", "commit": "4fb5abaef2f2e0540fe22d4d74a9841205fff9e4" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
   "cmp-cmdline": { "branch": "main", "commit": "d250c63aa13ead745e3a40f61fdd3470efde3923" },
