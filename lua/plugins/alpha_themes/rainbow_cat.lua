@@ -1,5 +1,3 @@
-local M = {}
-
 local function getLen(str, start_pos)
   local byte = string.byte(str, start_pos)
   if not byte then return nil end
@@ -34,7 +32,7 @@ local function colorize(header, header_color_map, colors)
   return colorized
 end
 
-M.rainbow_cat_alpha_config = function(opts)
+local rainbow_cat_alpha_config = function(opts)
   local logo = {
     [[ ██████████████████████████████████████████████████████████████████████████████████████████████████████ ]],
     [[ ██████████████████████████████████████████████████████████████████████████████████████████████████████ ]],
@@ -113,4 +111,4 @@ M.rainbow_cat_alpha_config = function(opts)
   return opts
 end
 
-return M
+return rainbow_cat_alpha_config

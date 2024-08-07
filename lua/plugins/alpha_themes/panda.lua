@@ -1,5 +1,3 @@
-local M = {}
-
 -- use https://github.com/sho-87/dotfiles/blob/f335d930f6a5745157072e9f1eee851ca375740b/nvim/lua/plugins/modules/alpha.lua#L18
 local create_gradient = function(start, finish, steps)
   local r1, g1, b1 =
@@ -71,7 +69,7 @@ local get_greeting = function()
   return "\t" .. datetime .. "\t" .. greetingsTable[greetingIndex]
 end
 
-M.panda_alpha_config = function(opts)
+local panda_alpha_config = function(opts)
   local logo = {
     [[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ]],
     [[⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣆⠀⢀⣀⣀⣤⣤⣤⣶⣦⣤⣤⣄⣀⣀⠀⢠⣾⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀   ]],
@@ -94,4 +92,4 @@ M.panda_alpha_config = function(opts)
   return opts
 end
 
-return M
+return panda_alpha_config
