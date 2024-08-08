@@ -7,6 +7,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.completion.cmp-under-comparator" },
   { import = "astrocommunity.completion.tabby-nvim" },
   {
     "TabbyML/vim-tabby",
@@ -132,7 +133,7 @@ return {
 
   { import = "astrocommunity.utility.telescope-fzy-native-nvim" },
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
-  { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.quickfix.nvim-bqf" },
 
   { import = "astrocommunity.game.leetcode-nvim" },
 }
