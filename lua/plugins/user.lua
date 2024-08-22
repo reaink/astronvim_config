@@ -146,4 +146,41 @@ return {
       }
     end,
   },
+  {
+    "yetone/avante.nvim",
+    event = "VeryLazy",
+    build = "make",
+    keys = {
+      { "<leader>a", group = "Avante", mode = { "n", "v" } },
+      { "<leader>aa", desc = "Ask", mode = { "n", "v" } },
+      { "<leader>ar", desc = "Refresh" },
+      { "<leader>ae", desc = "Edit" },
+    },
+    opts = {
+      ---@alias Provider "openai" | "claude" | "azure" | "deepseek" | "groq" | "copilot" | "gemini" | string
+      provider = "openai",
+      ---@type AvanteSupportedProvider
+      openai = {
+        endpoint = os.getenv "OPENAI_API_HOST",
+        model = "gpt-4o",
+        temperature = 0,
+        max_tokens = 4096,
+        ["local"] = false,
+      },
+    },
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      "stevearc/dressing.nvim",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      --- The below is optional, make sure to setup it properly if you have lazy=true
+      {
+        "MeanderingProgrammer/render-markdown.nvim",
+        opts = {
+          file_types = { "markdown", "Avante" },
+        },
+        ft = { "markdown", "Avante" },
+      },
+    },
+  },
 }

@@ -1,6 +1,5 @@
 {
   "AstroNvim": { "branch": "main", "commit": "42219c51e30843591ae62e27047d2a628612b38f" },
-  "ChatGPT.nvim": { "branch": "main", "commit": "f081338f07216a46d3915ce46c1fcb083bcb5016" },
   "LuaSnip": { "branch": "master", "commit": "03c8e67eb7293c404845b3982db895d59c0d1538" },
   "SchemaStore.nvim": { "branch": "main", "commit": "2ff2063191144005eb754356517de65ae45f2e41" },
   "actions-preview.nvim": { "branch": "master", "commit": "9f52a01c374318e91337697ebed51c6fae57f8a4" },
@@ -11,6 +10,7 @@
   "astrolsp": { "branch": "main", "commit": "e8290b739fa08c181a2149be5d94db0a91a42cd0" },
   "astrotheme": { "branch": "main", "commit": "41b7d8430a55fd771e41bd763af4c3fd1c2fc0b5" },
   "astroui": { "branch": "main", "commit": "0bc327c4a69f2e2b1a45449d5064d8e27e650d66" },
+  "avante.nvim": { "branch": "main", "commit": "480e35720d3c1b719dfeae65d420c6002b664cc6" },
   "better-diagnostic-virtual-text": { "branch": "main", "commit": "eb3a77e714aa6c295bdb4f074fccbda637090f6e" },
   "better-escape.nvim": { "branch": "master", "commit": "f45b52f8f87792e8659526f23261ffe278a54be5" },
   "catppuccin": { "branch": "main", "commit": "4fd72a9ab64b393c2c22b168508fd244877fec96" },
@@ -105,6 +105,7 @@
   "promise-async": { "branch": "main", "commit": "38a4575da9497326badd3995e768b4ccf0bb153e" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "9f3d10e66a79e8975926f8cb930856e4930d9da4" },
   "reactive.nvim": { "branch": "master", "commit": "a81b12322a2343d5f6530bebf3a844141d378550" },
+  "render-markdown.nvim": { "branch": "main", "commit": "277ae65ab14c23525ce3dbc9b812244c1976049e" },
   "resession.nvim": { "branch": "master", "commit": "cc819b0489938d03e4f3532a583354f0287c015b" },
   "rustaceanvim": { "branch": "master", "commit": "7cba8e599deca98d4b44cac1bcbd720c62937d90" },
   "smart-splits.nvim": { "branch": "master", "commit": "1a2b268a7ec7aeef879cdd15973339010ec134f7" },
