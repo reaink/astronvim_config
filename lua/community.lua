@@ -58,6 +58,8 @@ return {
   { import = "astrocommunity.color.ccc-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.blame-nvim" },
+  { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.comment.mini-comment" },
   { import = "astrocommunity.search.nvim-spectre" },
   { import = "astrocommunity.project.project-nvim" },
@@ -84,36 +86,6 @@ return {
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
-
-  -- { import = "astrocommunity.editing-support.chatgpt-nvim" },
-  -- {
-  --   "jackMort/ChatGPT.nvim",
-  --   config = function()
-  --     local config = {
-  --       api_host_cmd = os.getenv "OPENAI_API_HOST",
-  --       api_key_cmd = os.getenv "OPENAI_API_KEY",
-  --       openai_params = {
-  --         model = "claude-3-5-sonnet-20240620",
-  --         frequency_penalty = 0,
-  --         presence_penalty = 0,
-  --         max_tokens = 1000,
-  --         temperature = 0,
-  --         top_p = 1,
-  --         n = 1,
-  --       },
-  --       openai_edit_params = {
-  --         model = "claude-3-5-sonnet-20240620",
-  --         frequency_penalty = 0,
-  --         presence_penalty = 0,
-  --         temperature = 0,
-  --         top_p = 1,
-  --         n = 1,
-  --       },
-  --     }
-  --     local chatgpt = require "chatgpt"
-  --     chatgpt.setup(config)
-  --   end,
-  -- },
 
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.rust" },

@@ -90,7 +90,15 @@ return {
       },
     },
   },
-  { "akinsho/git-conflict.nvim", version = "*", config = true },
+  {
+    "akinsho/git-conflict.nvim",
+    lazy = true,
+    event = "BufReadPost",
+    opts = {},
+    keys = {
+      { "<leader>gxl", "<cmd>GitConflictListQf<cr>", desc = "List git conflicts" },
+    },
+  },
   {
     "xlboy/node-edge-toggler.nvim",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
