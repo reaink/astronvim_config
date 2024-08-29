@@ -157,32 +157,40 @@ return {
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
-    build = "make",
-    keys = {
-      { "<leader>a", group = "Avante", mode = { "n", "v" } },
-      { "<leader>aa", desc = "Ask", mode = { "n", "v" } },
-      { "<leader>ar", desc = "Refresh" },
-      { "<leader>ae", desc = "Edit" },
-    },
     opts = {
-      ---@alias Provider "openai" | "claude" | "azure" | "deepseek" | "groq" | "copilot" | "gemini" | string
       provider = "openai",
-      ---@type AvanteSupportedProvider
       openai = {
-        endpoint = os.getenv "OPENAI_API_HOST",
+        endpoint = os.getenv "OPENAI_ENDPOINT",
         model = "gpt-4o",
+        timeout = 30000, -- Timeout in milliseconds
         temperature = 0,
         max_tokens = 4096,
         ["local"] = false,
       },
     },
     dependencies = {
-      "nvim-tree/nvim-web-devicons",
       "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
-      --- The below is optional, make sure to setup it properly if you have lazy=true
+      --- The below dependencies are optional,
+      "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
       {
+        -- support for image pasting
+        "HakonHarnes/img-clip.nvim",
+        event = "VeryLazy",
+        opts = {
+          -- recommended settings
+          default = {
+            embed_image_as_base64 = false,
+            prompt_for_file_name = false,
+            drag_and_drop = {
+              insert_mode = true,
+            },
+          },
+        },
+      },
+      {
+        -- Make sure to setup it properly if you have lazy=true
         "MeanderingProgrammer/render-markdown.nvim",
         opts = {
           file_types = { "markdown", "Avante" },
