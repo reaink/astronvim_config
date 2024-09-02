@@ -56,6 +56,7 @@ return {
   { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.color.tint-nvim" },
   { import = "astrocommunity.color.ccc-nvim" },
+  { import = "astrocommunity.color.nvim-highlight-colors" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.git.blame-nvim" },
