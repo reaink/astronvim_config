@@ -157,15 +157,31 @@ return {
   {
     "yetone/avante.nvim",
     event = "VeryLazy",
+    version = false,
+    lazy = false,
+    -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
+    build = "make",
+    -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
     opts = {
       provider = "openai",
+      auto_suggestions_provider = "openai",
       openai = {
         endpoint = os.getenv "OPENAI_ENDPOINT",
-        model = "gpt-4o",
+        model = "claude-3-5-sonnet-20240620",
         timeout = 30000, -- Timeout in milliseconds
-        temperature = 0,
         max_tokens = 4096,
-        ["local"] = false,
+        temperature = 0,
+      },
+      behaviour = {
+        auto_suggestions = true,
+      },
+      mappings = {
+        suggestion = {
+          accept = "<C-e>",
+          next = "<C-]>",
+          prev = "<C-[>",
+          dismiss = "<C-.>",
+        },
       },
     },
     dependencies = {
@@ -174,6 +190,7 @@ return {
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
+      -- "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",
@@ -186,11 +203,13 @@ return {
             drag_and_drop = {
               insert_mode = true,
             },
+            -- required for Windows users
+            use_absolute_path = true,
           },
         },
       },
       {
-        -- Make sure to setup it properly if you have lazy=true
+        -- Make sure to set this up properly if you have lazy=true
         "MeanderingProgrammer/render-markdown.nvim",
         opts = {
           file_types = { "markdown", "Avante" },

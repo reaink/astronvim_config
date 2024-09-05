@@ -8,21 +8,21 @@ return {
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.cmp-under-comparator" },
-  { import = "astrocommunity.completion.tabby-nvim" },
-  {
-    "TabbyML/vim-tabby",
-    dependencies = {
-      "AstroNvim/astrocore",
-      ---@type AstroCoreOpts
-      opts = {
-        options = {
-          g = {
-            tabby_node_binary = "/opt/homebrew/bin/node",
-          },
-        },
-      },
-    },
-  },
+  -- { import = "astrocommunity.completion.tabby-nvim" },
+  -- {
+  --   "TabbyML/vim-tabby",
+  --   dependencies = {
+  --     "AstroNvim/astrocore",
+  --     ---@type AstroCoreOpts
+  --     opts = {
+  --       options = {
+  --         g = {
+  --           tabby_node_binary = "/opt/homebrew/bin/node",
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
 
   {
     "p00f/clangd_extensions.nvim",
@@ -73,7 +73,6 @@ return {
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.mini-bracketed" },
   { import = "astrocommunity.motion.marks-nvim" },
-  { import = "astrocommunity.motion.tabout-nvim" },
 
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
