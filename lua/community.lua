@@ -107,4 +107,6 @@ return {
   { import = "astrocommunity.quickfix.nvim-bqf" },
 
   { import = "astrocommunity.game.leetcode-nvim" },
+
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 }
