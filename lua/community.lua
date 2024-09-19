@@ -62,7 +62,7 @@ return {
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.openingh-nvim" },
   { import = "astrocommunity.comment.mini-comment" },
-  { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.search.grug-far-nvim" },
   { import = "astrocommunity.project.project-nvim" },
 
   { import = "astrocommunity.motion.flit-nvim" },
