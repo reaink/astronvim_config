@@ -167,8 +167,8 @@ return {
       auto_suggestions_provider = "openai",
       openai = {
         endpoint = os.getenv "OPENAI_ENDPOINT",
-        model = "claude-3-5-sonnet-20240620",
-        timeout = 30000, -- Timeout in milliseconds
+        model = "gpt-4o-mini",
+        timeout = 30000,
         max_tokens = 4096,
         temperature = 0,
       },
