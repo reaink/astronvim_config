@@ -109,4 +109,8 @@ return {
   { import = "astrocommunity.game.leetcode-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+
+  -- { import = "astrocommunity.split-and-window.neominimap-nvim" },
+
+  { import = "astrocommunity.media.vim-wakatime" },
 }
