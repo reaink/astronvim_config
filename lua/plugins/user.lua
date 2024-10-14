@@ -111,10 +111,6 @@ return {
     opts = {},
   },
   {
-    "mcauley-penney/visual-whitespace.nvim",
-    config = true,
-  },
-  {
     "rasulomaroff/reactive.nvim",
     opts = {
       builtin = {
