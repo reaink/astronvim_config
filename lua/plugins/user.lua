@@ -133,22 +133,6 @@ return {
     config = function() vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation) end,
   },
   {
-    "rachartier/tiny-inline-diagnostic.nvim",
-    event = "VeryLazy", -- Or `LspAttach`
-    config = function() require("tiny-inline-diagnostic").setup() end,
-    dependencies = {
-      {
-        "AstroNvim/astrocore",
-        optional = true,
-        opts = {
-          diagnostics = {
-            virtual_text = false,
-          },
-        },
-      },
-    },
-  },
-  {
     "yetone/avante.nvim",
     event = "VeryLazy",
     version = false,
