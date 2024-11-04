@@ -113,4 +113,6 @@ return {
   { import = "astrocommunity.media.vim-wakatime" },
 
   { import = "astrocommunity.split-and-window.colorful-winsep-nvim" },
+
+  { import = "astrocommunity.diagnostics.tiny-inline-diagnostic-nvim" },
 }
