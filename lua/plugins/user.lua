@@ -142,10 +142,6 @@ return {
     -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows
     opts = {
       provider = "copilot",
-      auto_suggestions_provider = "copilot",
-      behaviour = {
-        auto_suggestions = true,
-      },
       mappings = {
         suggestion = {
           accept = "<C-e>",

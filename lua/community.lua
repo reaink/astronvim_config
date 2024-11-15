@@ -8,21 +8,7 @@ return {
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.cmp-under-comparator" },
-  -- { import = "astrocommunity.completion.tabby-nvim" },
-  -- {
-  --   "TabbyML/vim-tabby",
-  --   dependencies = {
-  --     "AstroNvim/astrocore",
-  --     ---@type AstroCoreOpts
-  --     opts = {
-  --       options = {
-  --         g = {
-  --           tabby_node_binary = "/opt/homebrew/bin/node",
-  --         },
-  --       },
-  --     },
-  --   },
-  -- },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   {
     "p00f/clangd_extensions.nvim",
