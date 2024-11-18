@@ -9,6 +9,17 @@ return {
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.cmp-under-comparator" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.completion.avante-nvim" },
+  {
+    "yetone/avante.nvim",
+    version = "*",
+    opts = {
+      provider = "copilot",
+      copilot = {
+        model = "claude-3.5-sonnet",
+      },
+    },
+  },
 
   {
     "p00f/clangd_extensions.nvim",
