@@ -120,6 +120,18 @@ return {
     "s1n7ax/nvim-window-picker",
     opts = {
       hint = "floating-big-letter",
+      filter_rules = {
+        include_current_win = false,
+
+        -- filter using buffer options
+        bo = {
+          -- if the file type is one of following, the window will be ignored
+          filetype = { "NvimTree", "neo-tree", "notify" },
+
+          -- if the file type is one of following, the window will be ignored
+          buftype = { "terminal" },
+        },
+      },
     },
   },
   {
