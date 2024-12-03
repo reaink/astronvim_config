@@ -5,7 +5,8 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.recipes.neovide" },
+  -- { import = "astrocommunity.recipes.neovide" },
+  { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.cmp-under-comparator" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
@@ -106,8 +107,6 @@ return {
   { import = "astrocommunity.game.leetcode-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
-
-  { import = "astrocommunity.media.vim-wakatime" },
 
   { import = "astrocommunity.split-and-window.colorful-winsep-nvim" },
 
