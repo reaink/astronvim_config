@@ -11,6 +11,7 @@ return {
   },
   {
     "catppuccin/nvim",
-    enabled = false,
+    cond = not vim.g.vscode,
   },
+  { "gbprod/yanky.nvim", cond = not vim.g.vscode },
 }
