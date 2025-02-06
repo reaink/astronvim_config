@@ -9,15 +9,19 @@ return {
   { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.completion.cmp-under-comparator" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.completion.avante-nvim" },
   {
     "yetone/avante.nvim",
     version = "*",
     opts = {
-      provider = "copilot",
-      copilot = {
-        model = "claude-3.5-sonnet",
+      provider = "openai",
+      auto_suggestions_provider = "openai",
+      openai = {
+        endpoint = "https://api.openai-up.com/v1",
+        model = "claude-3-5-sonnet-20241022", -- your desired model (or use gpt-4o, etc.)
+        timeout = 30000, -- timeout in milliseconds
+        temperature = 0, -- adjust if needed
+        max_tokens = 4096,
       },
     },
   },
